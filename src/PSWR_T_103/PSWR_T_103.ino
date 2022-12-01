@@ -66,7 +66,7 @@ char        lcd_buf[82];    // Used to process data to be passed to LCD and USB 
 uint16_t    power_timer;    // Used to stay out of Screensaver
 uint16_t    Menu_exit_timer;// Used for a timed display when returning from Menu
 uint8_t     mode_display;   // Active display
-flags       flag;           // Various op flags
+push_flags  flag;           // Various op flags
 touch_flags touch;          // Touchscreen flags
 
 bool        Reverse;        // BOOL: True if reverse power is greater than forward power

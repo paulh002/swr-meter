@@ -13,7 +13,7 @@
 #include <ESPmDNS.h>
 #include <Update.h>
 #include <ArduinoOTA.h>
-#include <credentials.h>
+#include "credentials.h"
 #include "network.h"
 
 const char* host = "esp32-amp";

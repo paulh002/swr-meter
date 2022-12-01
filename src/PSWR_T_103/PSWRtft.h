@@ -40,7 +40,7 @@ class PowerMeter
     // Draw, Redraw or Erase Meter Scale.  range provides optinal unit information, such as "mW", "W", "kW"
     // input argument is a number from 1.0 and up, divided into 10  or 11 segments (11 if (scale*10)%11=0 )
     void scale(double s, char *range);      // Scale Erases if required and then draws everything
-    void scale(double s) { scale(s, '\0'); }// Blank if no scale range string
+    void scale(double s) { scale(s, nullptr); }// Blank if no scale range string
     void erase(void);                       // Erases everything
     //------------------------------------------------------------------------------
     // Draw Meter Graph

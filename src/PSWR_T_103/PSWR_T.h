@@ -39,7 +39,7 @@
 #include <Adafruit_ILI9341.h>
 
 #include "Fonts/DroidSansMono8pt7b.h"
-//#include "Fonts/FreeMono8pt7b.h"
+#include "Fonts/FreeMono8pt7b.h"
 #include "Fonts/FreeMono12pt7b.h"
 #include "Fonts/DroidSansMono24pt7b.h"
 #include "Fonts/FreeMono48pt7b.h"
@@ -429,7 +429,7 @@ typedef struct {
           unsigned menu_lcd_upd        : 1;   // Refresh/Update LCD when in Menu Mode
           unsigned config_mode         : 1;   // Configuration Menu Mode is active
           unsigned picture             : 1;   // Picture on screen (to signal delete on clear if present)
-                } flags;
+                } push_flags;
 
 typedef struct {                              // Touch screen push states
           unsigned onscreen            :  1;  // Keep track of wheter buttons are being displayed or not
